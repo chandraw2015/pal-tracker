@@ -11,12 +11,12 @@ import java.util.List;
 @RequestMapping("/time-entries")
 public class TimeEntryController {
 
+    @Autowired
     TimeEntryRepository timeEntryRepository;
 
     @Autowired
-    public TimeEntryController(TimeEntryRepository timeEntryRepository) {
+    public TimeEntryController() {
 
-        this.timeEntryRepository = timeEntryRepository;
     }
 
     @PostMapping
